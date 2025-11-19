@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8e70d1d4951114f8c49b388ad02014, type: 3}
+  m_Name: PlayerSetting
+  m_EditorClassIdentifier: 
+  playerBallObject: {fileID: 7477442761302614249, guid: 2744aec058cbacd4d9b40253b262f473, type: 3}
+  billiardCueObject: {fileID: 2549426029428906183, guid: db1f8390429206b4698543d0d4257676, type: 3}
+  shootData:
+    RotationSpeed: 180
+    AddPower: 5
+    MaxPower: 200
+    MinPower: 10
+  playerBall: {fileID: 7478470751783804610, guid: 2744aec058cbacd4d9b40253b262f473, type: 3}
+  billiardCue: {fileID: 2878273413888964317, guid: db1f8390429206b4698543d0d4257676, type: 3}
