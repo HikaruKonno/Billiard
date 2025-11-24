@@ -12,7 +12,7 @@ public static class StateChangeBus
     /// <summary>
     /// 指定した型のイベントを登録（ステートを切り替える関数を登録）
     /// </summary>
-    public static void Subscribe<T>(Action<T> callback)
+    public static void Subscribe<T>(Action<T> callback) where T :ChangeStateRequest
     {
         // Keyが重複していなければイベントを登録
         if (!_events.ContainsKey(typeof(T)))
@@ -27,7 +27,7 @@ public static class StateChangeBus
     /// <summary>
     /// 指定した型のイベントを解除する
     /// </summary>
-    public static void UnSubscribe<T>(Action<T> callback)
+    public static void UnSubscribe<T>(Action<T> callback) where T:ChangeStateRequest
     {
         if(_events.ContainsKey(typeof(T)))
         {
@@ -41,7 +41,7 @@ public static class StateChangeBus
     /// <summary>
     /// 指定した型のイベントを発行（ステートを切り替える）
     /// </summary>
-    public static void Publish<T>(T message)
+    public static void Publish<T>(T message) where T :ChangeStateRequest
     {
         if (_events.ContainsKey(typeof(T)))
         {
